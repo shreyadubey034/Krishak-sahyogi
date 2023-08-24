@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Roboto&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif,Arial ;
+  background-color: #B3C890;
+  color: #557A46 ;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.slider-box {
+  flex: 1;
+  padding-top: 60px;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.content-box {
+  flex: 1;
+  padding-top: 40px;
+  padding-right:100px;
+  padding-left:20px;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 65px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider-box, .content-box {
+    flex: unset;
+    padding: 20px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.hahaha{
+  font-family: Montserrat;
+  text-align: center;
+  color: #006600;
+  font-size: 34px;
+  
+  overflow: hidden;
+  
+}
+.animation{
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 80px;
+}
+.animation:first-of-type{
+  animation: appear 6s infinite;
+}
+.animation:last-of-type{
+  animation: reveal 6s ;
+}
+.animation:last-of-type span{
+  font-size: 33px;
+  color: #808000;
+  animation: slide 6s ;
+  font-size: 80px;
+}
+@keyframes appear{
+  0%{opacity: 0;}
+  20%{opacity: 1;}
+  80%{opacity: 1;}
+  100%{opacity: 1;}
+}
+@keyframes slide{
+  0%{margin-left:-800px;}
+  20%{margin-left:-800px;}
+  35%{margin-left:00px;}
+100%{margin-left:00px;}
+}
